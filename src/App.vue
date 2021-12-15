@@ -11,7 +11,7 @@
         <sources />
     </main>
     <button
-        @click="toTop()"
+        @click="toTop"
         class="
             fixed
             right-5
@@ -44,8 +44,7 @@ export default defineComponent({
         OriginOfVue,
         Sources,
     },
-    props: {},
-    setup(props) {
+    setup() {
         const toTop = function () {
             window.scrollTo({
                 top: 0,

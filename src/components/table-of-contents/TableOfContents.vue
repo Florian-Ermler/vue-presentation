@@ -50,8 +50,5 @@ export default defineComponent({
         PointOfInterest,
         ContentLink,
     },
-    setup() {
-        return {};
-    },
 });
 </script>
