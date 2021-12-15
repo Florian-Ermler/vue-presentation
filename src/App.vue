@@ -11,7 +11,6 @@
         <sources />
     </main>
     <button
-        @click="toTop()"
         class="
             fixed
             right-5
@@ -51,8 +50,6 @@ export default defineComponent({
                 behavior: 'smooth',
             });
         };
-
-        return { toTop };
     },
 });
 </script>
