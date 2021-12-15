@@ -11,7 +11,7 @@
         <sources />
     </main>
     <button
-        @click="toTop"
+        @click="toTop()"
         class="
             fixed
             right-5
