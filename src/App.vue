@@ -9,10 +9,6 @@
         <table-of-contents />
         <origin-of-vue />
         <basic-html />
-        <basic-js />
-        <solution />
-        <how-to-start />
-        <improve-your-skills />
         <exercise />
         <sources />
     </main>
