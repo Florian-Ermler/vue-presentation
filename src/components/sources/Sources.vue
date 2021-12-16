@@ -22,6 +22,7 @@
             <source-link :link="'https://developer.mozilla.org/de/docs/Web/JavaScript'" />
             <source-link :link="'https://www.w3schools.com/js/'" />
             <source-link :link="'https://www.javascript.com/'" />
+            <source-link :link="'https://www.vuemastery.com/'" />
         </ul>
     </point-of-interest>
 </template>
