@@ -1,8 +1,7 @@
 <template>
-    <point-of-interest id="vueOrigin">
-        <h1 class="text-center">Origin of Vue</h1>
-        <img src="https://cdn-media-1.freecodecamp.org/images/0*xkJgg-6HskYrQ3N7.jpeg" alt="evan you profile" />
-        <div>Hi</div>
+    <point-of-interest id="exercise">
+        <h1 class="text-center">Exercise</h1>
+        <iframe src="https://codepen.io/florian-ermler/pen/RwLVNzm?editors=1010" frameborder="0"></iframe>
     </point-of-interest>
 </template>
 

@@ -1,5 +1,6 @@
 <template>
     <li>
+        <span class="mr-5">-</span>
         <a :href="link" class="underline text-blue-800">{{ link }}</a>
         <span>&nbsp;{{ date }}</span>
     </li>

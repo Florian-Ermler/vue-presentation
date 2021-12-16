@@ -1,8 +1,14 @@
 <template>
-    <point-of-interest id="vueOrigin">
-        <h1 class="text-center">Origin of Vue</h1>
-        <img src="https://cdn-media-1.freecodecamp.org/images/0*xkJgg-6HskYrQ3N7.jpeg" alt="evan you profile" />
-        <div>Hi</div>
+    <point-of-interest id="basicJs">
+        <h1 class="text-center font-bold underline">Basics:</h1>
+        <div class="flex flex-col mt-10 justify-center items-center">
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Javascript-shield.svg"
+                alt="html logo"
+                class="object-contain w-56"
+            />
+            <div>Hi</div>
+        </div>
     </point-of-interest>
 </template>
 

@@ -8,49 +8,41 @@
     <main class="flex flex-col justify-center items-center">
         <table-of-contents />
         <origin-of-vue />
+        <basic-html />
+        <basic-js />
+        <solution />
+        <how-to-start />
+        <improve-your-skills />
+        <exercise />
         <sources />
     </main>
-    <button
-        class="
-            fixed
-            right-5
-            bottom-5
-            z-50
-            shadow-xl
-            rounded-full
-            bg-slate-200
-            w-10
-            h-10
-            text-3xl
-            flex
-            justify-center
-            items-center
-        "
-    >
-        ^
-    </button>
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, onMounted } from 'vue';
+import { defineComponent } from 'vue';
 import TableOfContents from './components/table-of-contents';
 import OriginOfVue from './components/origin-of-vue';
+import BasicHtml from './components/basic-html';
+import BasicJs from './components/basic-js';
+import Solution from './components/solution';
+import HowToStart from './components/how-to-start';
+import ImproveYourSkills from './components/improve-your-skills';
+import Exercise from './components/exercise';
 import Sources from './components/sources';
 
 export default defineComponent({
     components: {
         TableOfContents,
         OriginOfVue,
+        BasicHtml,
+        BasicJs,
+        Solution,
+        HowToStart,
+        ImproveYourSkills,
+        Exercise,
         Sources,
     },
-    setup() {
-        const toTop = function () {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth',
-            });
-        };
-    },
+    setup() {},
 });
 </script>
 
