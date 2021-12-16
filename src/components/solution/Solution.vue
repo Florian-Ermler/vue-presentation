@@ -14,9 +14,6 @@ export default defineComponent({
     components: {
         PointOfInterest,
     },
-    props: {},
-    setup(props) {
-        return {};
-    },
+    setup() {},
 });
 </script>
