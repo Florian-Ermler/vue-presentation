@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vue.js a modern, modular compund framework</title>
+    </head>
+    <body>
+        <div id="app">
+            <header class="sticky top-0 z-50 bg-slate-600">
+                <h1 class="flex flex-row justify-center items-center p-5">
+                    <img src="https://vuejs.org/images/logo.svg" alt="vue-logo" class="h-32" />
+                    <p class="text-4xl font-bold underline">Vue.js a modern, modular compund framework</p>
+                </h1>
+            </header>
+            <main class="flex flex-col justify-center items-center">
+                <p class="font-bold">What is Vue</p>
+                <ul class="list-disc list-inside">
+                    <li><a href="#vueOrigin" class="hover:underline">Origin and goals</a></li>
+                    <li><a href="#whatIsFramework" class="hover:underline">What is a Framework?</a></li>
+                </ul>
+
+                <p class="font-bold pt-5">Basics: HTML</p>
+                <ul class="list-disc list-inside">
+                    <li><a href="#basicHtml" class="hover:underline">What is HTML?</a></li>
+                    <li><a href="#bloatedFiles" class="hover:underline">Bloated files</a></li>
+                </ul>
+
+                <p class="font-bold pt-5">Basics: JavaScript</p>
+                <ul class="list-disc list-inside">
+                    <content-link :link="'#basicJs'"> What is JavaScript </content-link>
+                    <content-link :link="'#conditionalRender'"> How to render conditional views </content-link>
+                </ul>
+
+                <p class="font-bold pt-5">Conclusion</p>
+                <content-link :link="'#drawbacks'">Maintainability drawbacks without Vue</content-link>
+                <content-link :link="'#solution'">Vue's solution</content-link>
+
+                <p class="font-bold pt-5">Gettig started with Vue</p>
+                <ul class="list-disc list-inside">
+                    <content-link :link="'#gettingStarted'">First steps</content-link>
+                    <content-link :link="'#firstComponent'">How to build your first component</content-link>
+                </ul>
+
+                <p class="font-bold pt-5">More about Vue</p>
+                <ul class="list-disc list-inside">
+                    <content-link :link="'#vueMastery'">Achive Vue Mastery</content-link>
+                    <content-link :link="'#vueMastery'">Supporting the devs</content-link>
+                </ul>
+
+                <p class="pt-5">
+                    <a href="#exercise" class="font-bold hover:underline">Exercise</a>
+                </p>
+                <p class="pt-5">
+                    <a href="#sources" class="font-bold hover:underline">Sources</a>
+                </p>
+                <h1 class="text-center font-bold underline">Origin of Vue</h1>
+                <div class="flex flex-row mt-10">
+                    <img
+                        src="https://cdn-media-1.freecodecamp.org/images/0*xkJgg-6HskYrQ3N7.jpeg"
+                        alt="evan you profile"
+                        class="object-contain w-1/3"
+                    />
+                    <div class="ml-5">
+                        <p>Name: Evan You</p>
+                        <p class="mt-5">
+                            former Google developer where he worked with AngularJS on a number of porjects. After some
+                            time he thought to himself:
+                        </p>
+                        <p class="italic mt-5">
+                            "What if I could just extract the part that I really liked about Angular and build something
+                            really lightweight."
+                        </p>
+                        <p class="mt-5">-> first source code commit to the project was dated in July 2013</p>
+                        <p>--> the project was then released in February 2014 with version 0.9 Animatrix</p>
+                    </div>
+                </div>
+                <div class="flex flex-col mt-10 justify-center items-center">
+                    <img
+                        src="https://mlwzfwt7aajx.i.optimole.com/ehEQlfA-ucW_wjTd/w:800/h:450/q:75/https://www.techtually.com/wp-content/uploads/2020/04/What-is-framework-in-programming-language.jpg"
+                        alt="what is a framework"
+                        class="object-contain w-2/3"
+                    />
+                    <div class="ml-5">
+                        <p class="text-center mt-10 underline font-bold">Frameworks vs. Programming Languages</p>
+                        <p class="mt-5">
+                            Programming Languages are <span class="font-bold">USED</span> to create Frameworks
+                        </p>
+                        <p>
+                            Frameworks are targeted to help solve specific usecases and help developers working faster
+                            and more efficient
+                        </p>
+                        <p class="mt-5">as an example:</p>
+                        <p>C# -> ASP.NET MVC -> Wep Apps</p>
+                        <p></p>
+                        <p class="text-center mt-10 underline font-bold">Frameworks vs. Libraries</p>
+                        <p class="italic mt-5">"Your code calls the library, but the framework calls your code"</p>
+                        <p>or to put it in other words:</p>
+                        <p>a Framework acts as your foundation and a library solves specific problems</p>
+                    </div>
+                </div>
+                <h1 class="text-center font-bold underline">Basics:</h1>
+                <div class="flex flex-col mt-10 justify-center items-center">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                        alt="html logo"
+                        class="object-contain w-80"
+                    />
+                    <div>
+                        <p class="mt-2">
+                            <span class="font-bold"> HTML (Hypertext Markup Language) </span> is the code that is used
+                            to structure a web page and its content.
+                        </p>
+                        <p class="mt-2">
+                            It's is <span class="font-bold">NOT</span> a programming language it's a markup language!
+                        </p>
+                        <p class="mt-2">
+                            The <span class="font-bold"> W3C (World Wide Web Consortium) </span> founded in 1994, is the
+                            main international standards organization for the World Wide Web
+                        </p>
+                        <p class="mt-2">
+                            They are tasked to ensure the growth of the Web with their guidelines and also take part in
+                            educating developers.
+                        </p>
+                        <div class="m-5 p-5 rounded shadow-2xl w-2/3 text-3xl bg-gray-900 text-white" id="bloatedFiles">
+                            <p>&lt;!DOCTYPE html&gt;</p>
+                            <p>&lt;html lang="en"&gt;</p>
+                            <p class="ml-4">&lt;head&gt;</p>
+                            <p class="ml-8">&lt;title&gt;</p>
+                            <p class="ml-12">This is the websites title!</p>
+                            <p class="ml-8">&lt;/title&gt;</p>
+                            <p class="ml-8">&lt;meta charset="UTF-8" /&gt;</p>
+                            <p class="ml-4">&lt;/head&gt;</p>
+                            <p class="ml-4">&lt;body&gt;</p>
+                            <div class="ml-8">
+                                &lt;div&gt;
+                                <p class="ml-12">&lt;p&gt;Hello E3FI&lt;p&gt;</p>
+                                <p class="ml-12">&lt;p&gt;This is HTML!&lt;p&gt;</p>
+                                <p class="ml-12">
+                                    &lt;p&gt;And this is how HTML will eventually look like without Vue or another
+                                    modular Framework: &lt;p&gt;
+                                </p>
+                                <p class="ml-12">
+                                    <a
+                                        href="https://github.com/Florian-Ermler/vue-presentation/tree/main/src/bloated.html"
+                                    >
+                                        &lt;a
+                                        href="https://github.com/Florian-Ermler/vue-presentation/tree/main/src/bloated.html"&gt;
+                                        &lt;/a&gt;
+                                    </a>
+                                </p>
+                                &lt;div&gt;
+                            </div>
+                            <p class="ml-4">&lt;/body&gt;</p>
+                            <p>&lt;html&gt;</p>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="text-center font-bold underline">Basics:</h1>
+                <div class="flex flex-col mt-10 justify-center items-center">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Javascript-shield.svg"
+                        alt="html logo"
+                        class="object-contain w-56"
+                    />
+                    <div>
+                        <p class="mt-2">
+                            <span class="font-bold">JS (JavaScript) </span>is mostly used for frontend web apps but not
+                            exclusively as it is also used as backend linke node.js
+                        </p>
+                        <p class="mt-2">it's the most used programming/script language in the world</p>
+                        <p class="mt-2">and it is really easy to learn!</p>
+                        <div class="m-5 p-5 rounded shadow-2xl w-2/3 text-3xl bg-gray-900 text-white" id="bloatedFiles">
+                            <p>function initiateGreeting(attentionLvl) {</p>
+                            <p class="ml-4">if(attentionLvl >= 80) {</p>
+                            <p class="ml-8">document.getElementById('greeting').style.display = "block";</p>
+                            <p class="ml-4">}</p>
+                            <p class="ml-4">else if(attentionLvl >= 40) {</p>
+                            <p class="ml-8">const element = document.getElementById('greeting');</p>
+                            <p class="ml-8">element.innerHtml = createGrimMessage();</p>
+                            <p class="ml-8">element.style.display = "block"</p>
+                            <p class="ml-4">}</p>
+                            <p class="ml-4">else {</p>
+                            <p class="ml-8">throwItem(pickupNearestItem(), getRandomTarget())</p>
+                            <p class="ml-4">}</p>
+                            <p>}</p>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="text-center font-bold underline">Conclusion</h1>
+                <div>
+                    <div id="drawbacks">
+                        <p class="font-bold mt-10">Problems/annoyances of plain HTML and JS</p>
+                        <p class="mt-5">
+                            <span class="font-bold">HTML</span> files, even with outsourced Javascript files are getting
+                            bloated over time and it's really annoying to maintian them which is why nearly no one does
+                            it.
+                        </p>
+                        <p class="mt-5">and</p>
+                        <p class="mt-5">
+                            <span class="font-bold">JavaScript</span> requires a lot of effort to make it maintainable
+                            (that's why Vue 3 was build with TypeScipt) and many implementaions are just laborious to
+                            use as an aspiring or even senior developer.
+                        </p>
+                        <p class="text-center mt-5 font-bold">
+                            <a href="https://github.com/Florian-Ermler/vue-presentation">
+                                This is where Vue comes into play and rescues your web development career!
+                            </a>
+                        </p>
+                    </div>
+                    <div id="solution"></div>
+                </div>
+                <h1 class="text-center font-bold underline">How to start</h1>
+
+                <div class="text-center mt-5"><a href="https://vuejs.org/" class="underline"> Visit Vuejs.org</a></div>
+                <h1 class="text-center font-bold underline">Improve and support Vue</h1>
+                <div class="flex flex-col mt-10 justify-center items-center">
+                    <a href="https://www.vuemastery.com/">
+                        <img
+                            src="https://www.vuemastery.com/images/vuemastery-white.svg"
+                            alt="vue mastery logo"
+                            class="bg-slate-800"
+                        />
+                    </a>
+                    <a href="https://vuejs.org/support-vuejs/" class="font-bold mt-5">Sponsor Vue.js Development</a>
+                </div>
+                <h1 class="text-center font-bold underline mb-10">Exercise</h1>
+                <p
+                    class="codepen"
+                    data-height="600"
+                    data-default-tab="html,result"
+                    data-slug-hash="RwLVNzm"
+                    data-editable="true"
+                    data-user="florian-ermler"
+                    style="
+                        height: 600px;
+                        box-sizing: border-box;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 2px solid;
+                        margin: 1em 0;
+                        padding: 1em;
+                    "
+                >
+                    <span
+                        >See the Pen
+                        <a href="https://codepen.io/florian-ermler/pen/RwLVNzm"> Vue.js: Reactivity Quiz</a> by
+                        Florian-Ermler (<a href="https://codepen.io/florian-ermler">@florian-ermler</a>) on
+                        <a href="https://codepen.io">CodePen</a>.</span
+                    >
+                </p>
+                <h1 class="text-center">Sources</h1>
+                <ul>
+                    <source-link :link="'https://vuejs.org/images/logo.svg'" :date="'02.05.2022'" />
+                    <source-link :link="'https://cdn-media-1.freecodecamp.org/images/0*xkJgg-6HskYrQ3N7.jpeg'" />
+                    <source-link
+                        :link="'https://mlwzfwt7aajx.i.optimole.com/ehEQlfA-ucW_wjTd/w:800/h:450/q:75/https://www.techtually.com/wp-content/uploads/2020/04/What-is-framework-in-programming-language.jpg'"
+                    />
+                    <source-link :link="'https://en.wikipedia.org/wiki/Vue.js'" />
+                    <source-link :link="'https://makemeaprogrammer.com/what-is-a-programming-framework/'" />
+                    <source-link :link="'https://cocosolution.com/en/what-is-a-framework/'" />
+                    <source-link
+                        :link="'https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg'"
+                    />
+                    <source-link :link="'https://upload.wikimedia.org/wikipedia/commons/d/d4/Javascript-shield.svg'" />
+                    <source-link
+                        :link="'https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics'"
+                    />
+                    <source-link :link="'https://www.w3schools.com/html/'" />
+                    <source-link :link="'https://en.wikipedia.org/wiki/World_Wide_Web_Consortium'" />
+                    <source-link :link="'https://vuejs.org/'" />
+                    <source-link :link="'https://jsonplaceholder.typicode.com/comments'" />
+                    <source-link :link="'https://developer.mozilla.org/de/docs/Web/JavaScript'" />
+                    <source-link :link="'https://www.w3schools.com/js/'" />
+                    <source-link :link="'https://www.javascript.com/'" />
+                </ul>
+            </main>
+        </div>
+        <script type="module" src="/src/main.ts"></script>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </body>
+</html>

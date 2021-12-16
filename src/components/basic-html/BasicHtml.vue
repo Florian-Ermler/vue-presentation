@@ -7,7 +7,7 @@
                 alt="html logo"
                 class="object-contain w-80"
             />
-            <div class="">
+            <div>
                 <p class="mt-2">
                     <span class="font-bold"> HTML (Hypertext Markup Language) </span> is the code that is used to
                     structure a web page and its content.

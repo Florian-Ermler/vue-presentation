@@ -9,6 +9,10 @@
         <table-of-contents />
         <origin-of-vue />
         <basic-html />
+        <basic-js />
+        <conclusion />
+        <how-to-start />
+        <improve-your-skills />
         <exercise />
         <sources />
     </main>
@@ -20,7 +24,7 @@ import TableOfContents from './components/table-of-contents';
 import OriginOfVue from './components/origin-of-vue';
 import BasicHtml from './components/basic-html';
 import BasicJs from './components/basic-js';
-import Solution from './components/solution';
+import Conclusion from './components/conclusion';
 import HowToStart from './components/how-to-start';
 import ImproveYourSkills from './components/improve-your-skills';
 import Exercise from './components/exercise';
@@ -32,7 +36,7 @@ export default defineComponent({
         OriginOfVue,
         BasicHtml,
         BasicJs,
-        Solution,
+        Conclusion,
         HowToStart,
         ImproveYourSkills,
         Exercise,

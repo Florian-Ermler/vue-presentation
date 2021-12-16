@@ -18,6 +18,10 @@
             <source-link :link="'https://www.w3schools.com/html/'" />
             <source-link :link="'https://en.wikipedia.org/wiki/World_Wide_Web_Consortium'" />
             <source-link :link="'https://vuejs.org/'" />
+            <source-link :link="'https://jsonplaceholder.typicode.com/comments'" />
+            <source-link :link="'https://developer.mozilla.org/de/docs/Web/JavaScript'" />
+            <source-link :link="'https://www.w3schools.com/js/'" />
+            <source-link :link="'https://www.javascript.com/'" />
         </ul>
     </point-of-interest>
 </template>
@@ -33,8 +37,6 @@ export default defineComponent({
         PointOfInterest,
         SourceLink,
     },
-    setup() {
-        return {};
-    },
+    setup() {},
 });
 </script>

@@ -1,8 +1,8 @@
 <template>
     <point-of-interest id="vueOrigin">
-        <h1 class="text-center">Origin of Vue</h1>
-        <img src="https://cdn-media-1.freecodecamp.org/images/0*xkJgg-6HskYrQ3N7.jpeg" alt="evan you profile" />
-        <div>Hi</div>
+        <h1 class="text-center font-bold underline">How to start</h1>
+
+        <div class="text-center mt-5"><a href="https://vuejs.org/" class="underline"> Visit Vuejs.org</a></div>
     </point-of-interest>
 </template>
 

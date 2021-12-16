@@ -31,7 +31,7 @@
         <p class="font-bold pt-5">More about Vue</p>
         <ul class="list-disc list-inside">
             <content-link :link="'#vueMastery'">Achive Vue Mastery</content-link>
-            <content-link :link="'#support'">Supporting the devs</content-link>
+            <content-link :link="'#vueMastery'">Supporting the devs</content-link>
         </ul>
 
         <p class="pt-5">
